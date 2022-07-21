@@ -6,7 +6,6 @@ public abstract class Piece {
 	private Board board;
 
 	public Piece(Board board) {
-		super();
 		this.board = board;
 		position = null;
 	}
@@ -18,7 +17,7 @@ public abstract class Piece {
 	public abstract boolean[][] possibleMoves();
 
 	public boolean possibleMove(Position position) {
-		return possibleMoves()[position.getRow()][position.getColumn()];
+			return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 
 	public boolean isThereAnyPossibleMove() {
